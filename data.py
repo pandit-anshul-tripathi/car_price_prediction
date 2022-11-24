@@ -22,9 +22,9 @@ def app(cars_df):
 			elif column_data == 'carwidth':
 				st.write(cars_df['carwidth'])
 			elif column_data == 'drivewheel':
-				st.write(cars_df['drivewheel'])
+				st.write(cars_df['drivewheel_fwd'])
 			else:
 				st.write(cars_df['price'])
 	with beta_col3:
-        if st.checkbox("View column data-type"):
-            st.table(car_df.dtypes)
+		if st.checkbox("View column data-type"):
+			st.table(cars_df.dtypes)
