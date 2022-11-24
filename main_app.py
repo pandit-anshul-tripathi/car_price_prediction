@@ -34,7 +34,7 @@ def load_data():
   return cars_df[final_columns]
 final_cars_df = load_data()
 pages_dict = {
-             "Home:" home,
+             "Home": home,
              "View Data": data, 
              "Visualise Data": plots, 
              "Predict": predict
