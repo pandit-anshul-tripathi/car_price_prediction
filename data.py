@@ -14,7 +14,7 @@ def app(cars_df):
 			st.table(cars_df.columns)
 	with beta_col2:
 		if st.checkbox('View column data'):
-			column_data = st.selectbox('Select column', tuple('enginesize', 'horsepower', 'carwidth', 'drivewheel', 'price'))
+			column_data = st.selectbox('Select column', tuple('enginesize', 'horsepower', 'carwidth', 'drivewheel_fwd', 'price'))
 			if column_data == 'enginesize':
 				st.write(cars_df['enginesize'])
 			elif column_data == 'horsepower':
