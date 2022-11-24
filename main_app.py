@@ -1,7 +1,5 @@
 import home
 import data
-import plots
-import predict
 import streamlit as st
 st.set_page_config(page_title = 'Car Price Prediction', page_icon = ":car:", layout = 'centered', initial_sidebar_state = 'auto')
 import numpy as np
@@ -35,9 +33,7 @@ def load_data():
 final_cars_df = load_data()
 pages_dict = {
              "Home": home,
-             "View Data": data, 
-             "Visualise Data": plots, 
-             "Predict": predict
+             "View Data": data,
          }
 st.sidebar.title('Navigation')
 user_choice = st.sidebar.radio('Go to', tuple(pages_dict.keys()))
