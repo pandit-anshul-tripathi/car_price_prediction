@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from slearn.metrics import mean_squared_error as mse, r2_score, mean_absolute_error as mae, mean_squared_log_error as msle
+from sklearn.metrics import mean_squared_error as mse, r2_score, mean_absolute_error as mae, mean_squared_log_error as msle
 @st.cache()
 def prediction(cars_df, car_width, engine_size, horse_power, dwf, ccb):
 	X = cars_df.iloc[:, :-1]
