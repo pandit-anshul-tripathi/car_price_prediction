@@ -21,7 +21,7 @@ def app(cars_df):
 				st.write(cars_df['horsepower'])
 			elif column_data == 'carwidth':
 				st.write(cars_df['carwidth'])
-			elif column_data == 'drivewheel':
+			elif column_data == 'drivewheel_fwd':
 				st.write(cars_df['drivewheel_fwd'])
 			else:
 				st.write(cars_df['price'])
